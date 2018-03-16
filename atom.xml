@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-16T08:24:52.878Z</updated>
+  <updated>2018-03-16T08:31:00.344Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,23 +21,17 @@
     <link href="http://yoursite.com/2018/03/16/DOM/"/>
     <id>http://yoursite.com/2018/03/16/DOM/</id>
     <published>2018-03-16T08:24:52.000Z</published>
-    <updated>2018-03-16T08:24:52.878Z</updated>
+    <updated>2018-03-16T08:31:00.344Z</updated>
+    
+    <content type="html"><![CDATA[<p>#有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。<br>1、getElementById<br>2、getElementsByTagName<br>3、getElementsByClassName</p>]]></content>
     
     <summary type="html">
     
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hahah</title>
-    <link href="http://yoursite.com/2018/03/14/hahah/"/>
-    <id>http://yoursite.com/2018/03/14/hahah/</id>
-    <published>2018-03-14T10:13:57.000Z</published>
-    <updated>2018-03-14T10:13:57.761Z</updated>
-    
-    <summary type="html">
+      
+      
+        &lt;p&gt;#有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。&lt;br&gt;1、getElementById&lt;br&gt;2、getElementsByTagName&lt;br&gt;3、getElementsByClassName&lt;/p&gt;
+
+      
     
     </summary>
     
