@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-16T08:32:02.809Z</updated>
+  <updated>2018-03-16T08:37:43.480Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2018/03/16/DOM/"/>
     <id>http://yoursite.com/2018/03/16/DOM/</id>
     <published>2018-03-16T08:24:52.000Z</published>
-    <updated>2018-03-16T08:32:02.809Z</updated>
+    <updated>2018-03-16T08:37:43.480Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。"><a href="#有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。" class="headerlink" title="有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。"></a>有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。</h1><p>1、getElementById<br>2、getElementsByTagName<br>3、getElementsByClassName</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。"><a href="#有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。" class="headerlink" title="有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。"></a>有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。</h1><p>1、getElementById<br>2、getElementsByTagName<br>3、getElementsByClassName</p><h2 id="getElementById"><a href="#getElementById" class="headerlink" title="getElementById"></a>getElementById</h2><p>  DOM提供一个名为getElementByID的方法，这个方法将返回一个与那个有着给定ID属性值的元素节点对应的对象。<br>  它只有一个参数，想获得那个元素的id属性的值，这个id值必须放在单引号或者双引号里面。<br>eg：document.getElementById(“id”)</p>]]></content>
     
     <summary type="html">
     
