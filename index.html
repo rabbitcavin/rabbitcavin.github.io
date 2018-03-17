@@ -336,6 +336,8 @@
 <h1 id="获取和设置属性"><a href="#获取和设置属性" class="headerlink" title="获取和设置属性"></a>获取和设置属性</h1><h2 id="获取属性-getAttribute"><a href="#获取属性-getAttribute" class="headerlink" title="获取属性(getAttribute)"></a>获取属性(getAttribute)</h2><p>   getAttribute方法不同于document对象，所以不能通过document对象调用。它只能通过元素节点对象调用。</p>
 <p>   <strong>eg:var paras = document.getElementsByTagName(“p”)<br>   for(var i=0;i&lt;paras.length;i++){<br>   alert(paras[i].getAttribute(“title”)); }</strong></p>
 <p>   我们可以修改脚本，让它只在title属性有值时才弹出消息。我们将增加一条if语句来检查getAttribute的返回值是不是null。<br>   <strong>eg:var paras = document.getElementsByTagName(“p”);<br>   for(var i=0;i&lt;paras.length;i++){<br>   var title_text = paras[i].getAttribute(“title”);<br>   if(title_test !=null) {<br>   alert(tittle_text) }<br>   }</strong></p>
+<h2 id="修改属性-setAttribute"><a href="#修改属性-setAttribute" class="headerlink" title="修改属性(setAttribute)"></a>修改属性(setAttribute)</h2><p>   它允许哦我们对属性节点的值做出修改。与getAttribute一样，setAttribute也只能用于元素节点：<br>   **boject.setAttribute(attribute,value)</p>
+<p>   <strong>eg:var paras = document.getElementsByTagName(“p”);<br>   for(var i=0;i&lt;paras.length;i++){<br>   var title_text = paras[i].getAttribute(“title”);<br>   if(title_test) {<br>   paras[i].setAttribute(“title”,”brand new title text”);<br>   alert(paras[i].getAttribute(“title”)); }<br>   }</strong></p>
 
           
         
