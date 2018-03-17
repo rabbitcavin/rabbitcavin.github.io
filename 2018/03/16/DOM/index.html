@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="Rabbit">
 <meta property="og:description" content="有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。1、getElementById2、getElementsByTagName3、getElementsByClassName getElementByIdeg：document.getElementById(“id”)   DOM提供一个名为getElementById的方法，这个方法将返回一个与那个有着给定ID属">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-17T04:31:25.427Z">
+<meta property="og:updated_time" content="2018-03-17T04:33:07.339Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM">
 <meta name="twitter:description" content="有3种DOM方法可获取元素节点，分别是通过元素ID、通过标签名字和通过类名字来获取。1、getElementById2、getElementsByTagName3、getElementsByClassName getElementByIdeg：document.getElementById(“id”)   DOM提供一个名为getElementById的方法，这个方法将返回一个与那个有着给定ID属">
@@ -337,7 +337,7 @@
 <h1 id="获取和设置属性"><a href="#获取和设置属性" class="headerlink" title="获取和设置属性"></a>获取和设置属性</h1><h2 id="获取属性-getAttribute"><a href="#获取属性-getAttribute" class="headerlink" title="获取属性(getAttribute)"></a>获取属性(getAttribute)</h2><p>   getAttribute方法不同于document对象，所以不能通过document对象调用。它只能通过元素节点对象调用。</p>
 <p>   <strong>eg:var paras = document.getElementsByTagName(“p”)<br>   for(var i=0;i&lt;paras.length;i++){<br>   alert(paras[i].getAttribute(“title”)); }</strong></p>
 <p>   我们可以修改脚本，让它只在title属性有值时才弹出消息。我们将增加一条if语句来检查getAttribute的返回值是不是null。<br>   <strong>eg:var paras = document.getElementsByTagName(“p”);<br>   for(var i=0;i&lt;paras.length;i++){<br>   var title_text = paras[i].getAttribute(“title”);<br>   if(title_test !=null) {<br>   alert(tittle_text) }<br>   }</strong></p>
-<h2 id="修改属性-setAttribute"><a href="#修改属性-setAttribute" class="headerlink" title="修改属性(setAttribute)"></a>修改属性(setAttribute)</h2><p>   它允许哦我们对属性节点的值做出修改。与getAttribute一样，setAttribute也只能用于元素节点：<br>   <strong>boject.setAttribute(attribute,value)</strong></p>
+<h2 id="修改属性-setAttribute"><a href="#修改属性-setAttribute" class="headerlink" title="修改属性(setAttribute)"></a>修改属性(setAttribute)</h2><p>   它允许哦我们对属性节点的值做出修改。与getAttribute一样，setAttribute也只能用于元素节点：<br>   <strong>object.setAttribute(attribute,value)</strong></p>
 <p>   <strong>eg:var paras = document.getElementsByTagName(“p”);<br>   for(var i=0;i&lt;paras.length;i++){<br>   var title_text = paras[i].getAttribute(“title”);<br>   if(title_test) {<br>   paras[i].setAttribute(“title”,”brand new title text”);<br>   alert(paras[i].getAttribute(“title”)); }<br>   }</strong></p>
 
       
