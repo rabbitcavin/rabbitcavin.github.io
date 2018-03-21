@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-21T12:55:10.233Z</updated>
+  <updated>2018-03-21T13:07:38.168Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ajax</title>
+    <link href="http://yoursite.com/2018/03/21/Ajax/"/>
+    <id>http://yoursite.com/2018/03/21/Ajax/</id>
+    <published>2018-03-21T12:57:35.000Z</published>
+    <updated>2018-03-21T13:07:38.168Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h2><p>   Ajax:异步加载页面<br>   Ajax的主要优势就是对页面的请求以异步方式发送到服务器，利用Ajax，Web应用可以呈现出功能丰富、交互敏捷、类似桌面应用般的体验，就像你使用谷歌地图时一样的感觉。<br>   <strong>Ajax的核心就是XMLHttpRequest对象。这个对象充当着浏览器中的脚本与服务器之间的中间人的角色。</strong><br>   重要的脚本<strong>addLoadEvent.js &amp;&amp; getHTTPObject.js &amp;&amp; getNewContent.js</strong><br>   为了模拟服务器的响应，在ajax.html旁边创建一个example.txt的文件<br>   内容：<strong>This was loaded asynchronously! </strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Ajax&quot;&gt;&lt;a href=&quot;#Ajax&quot; class=&quot;headerlink&quot; title=&quot;Ajax&quot;&gt;&lt;/a&gt;Ajax&lt;/h2&gt;&lt;p&gt;   Ajax:异步加载页面&lt;br&gt;   Ajax的主要优势就是对页面的请求以异步方式发送到服务器，利用Ajax，Web应用
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>innerHTML</title>
