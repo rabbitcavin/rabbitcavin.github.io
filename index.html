@@ -338,6 +338,7 @@
 }
 </code></pre><p>   getHTTPObject 通过对象检测技术检测了 XMLHttpRequest。如果失败，则继续检测其他方法，最终返回false或一个心得XMLHttpRequest对象。</p>
 <h3 id="getNewContent-js"><a href="#getNewContent-js" class="headerlink" title="getNewContent.js"></a>getNewContent.js</h3><p>   **function getNewContent(){<br>        var request = getHTTPObject();<br>        if (request) {<br>            request.open( “GET”, “example.txt”,true );<br>            request.onreadystatechange = function() {<br>                if (request.readyState == 4) {<br>                    var para = document.createElement(“p”);<br>                    var txt = document.createTextNode(“request.responseText”);<br>                    para.appendChild(txt);<br>                    document.getElementById(‘new’).appendChild(para);<br>                }<br>            };<br>            request.send(null);<br>        } else {<br>            alert(‘Sorry,your browser doesn’t support XMLHttpRequest’);<br>        }<br>    }<br>    addLoadEvent(getNewContent);<br>  当页面加载完成后，以上代码会发送一个Get请求，请求与ajax.html文件位于同一example.txt文件</p>
+<p>   服务器在向XMLHttpRequest对象发回响应的时，该对象有许多属性可用，浏览器会在不同阶段更新readystate属性的值，它有5个可能的值：<br>     0表示未初始化<br>     1表示正在加载<br>     2表示加载完毕<br>     3表示正在交互<br>     4表示完成<br>   只要readyState属性的值变成了4，就可以访问服务器发送回来的数据了。</p>
 
           
         
