@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-17T04:33:07.339Z</updated>
+  <updated>2018-03-21T12:55:10.233Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>innerHTML</title>
+    <link href="http://yoursite.com/2018/03/21/innerHTML/"/>
+    <id>http://yoursite.com/2018/03/21/innerHTML/</id>
+    <published>2018-03-21T12:48:11.000Z</published>
+    <updated>2018-03-21T12:55:10.233Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="innerHTML属性"><a href="#innerHTML属性" class="headerlink" title="innerHTML属性"></a>innerHTML属性</h2><p>  innerHTML属性可以用来读、写某给定元素里的HTML内容。<br>  <strong>eg：window.onload = function(){<br>    var testdiv = document.getElementById(“testdiv”);<br>    alert(testdiv.innerHTML);}</strong><br>   innerHTMl毫无细节可言，但它不仅可以读出元素中的HTML内容，还可以把HTML内容写入元素。<br>   <strong>innerHTML也是HTML专有属性，不能用于任何其他标记语言文档。</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;innerHTML属性&quot;&gt;&lt;a href=&quot;#innerHTML属性&quot; class=&quot;headerlink&quot; title=&quot;innerHTML属性&quot;&gt;&lt;/a&gt;innerHTML属性&lt;/h2&gt;&lt;p&gt;  innerHTML属性可以用来读、写某给定元素里的HTML内容。
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>DOM</title>
