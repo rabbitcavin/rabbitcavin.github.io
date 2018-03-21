@@ -323,8 +323,21 @@
         
           
             <h2 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h2><p>   Ajax:异步加载页面<br>   Ajax的主要优势就是对页面的请求以异步方式发送到服务器，利用Ajax，Web应用可以呈现出功能丰富、交互敏捷、类似桌面应用般的体验，就像你使用谷歌地图时一样的感觉。<br>   <strong>Ajax的核心就是XMLHttpRequest对象。这个对象充当着浏览器中的脚本与服务器之间的中间人的角色。</strong><br>   重要的脚本<strong>addLoadEvent.js &amp;&amp; getHTTPObject.js &amp;&amp; getNewContent.js</strong><br>   为了模拟服务器的响应，在ajax.html旁边创建一个example.txt的文件<br>   内容：<strong>This was loaded asynchronously! </strong></p>
-<h3 id="getHTTPObject-js"><a href="#getHTTPObject-js" class="headerlink" title="getHTTPObject.js"></a>getHTTPObject.js</h3><p>   <strong>function getHTTPObject() {<br>        if (typeof XMLHttpRequest == “underfined”)<br>        XMLHTTPRequest = function() {<br>            try { return new ActiveXObject(“Msxml2.XMLHTTP.6.0”);}<br>            catch(e) {}<br>            try { return new ActiveXObject(“Msxml2.XMLHTTP.3.0”);}<br>            catch(e) {}<br>            try { return new ActiveXObject(“Msxml2.XMLHTTP.3.0”);}<br>            catch(e) {}<br>            return false;<br>        }<br>        return new XMLHttpRequest();<br>   } </strong><br>   getHTTPObject 通过对象检测技术检测了 XMLHttpRequest。如果失败，则继续检测其他方法，最终返回false或一个心得XMLHttpRequest对象。</p>
-<h3 id="getNewContent-js"><a href="#getNewContent-js" class="headerlink" title="getNewContent.js"></a>getNewContent.js</h3><p>   <strong>function getNewContent(){<br>        var request = getHTTPObject();<br>        if (request) {<br>            request.open( “GET”, “example.txt”,true );<br>            request.onreadystatechange = function() {<br>                if (request.readyState == 4) {<br>                    var para = document.createElement(“p”);<br>                    var txt = document.createTextNode(“request.responseText”);<br>                    para.appendChild(txt);<br>                    document.getElementById(‘new’).appendChild(para);<br>                }<br>            };<br>            request.send(null);<br>        } else {<br>            alert(‘Sorry,your browser doesn’t support XMLHttpRequest’);<br>        }<br>    }<br>   addLoadEvent(getNewContent); </strong><br>    当页面加载完成后，以上代码会发送一个Get请求，请求与ajax.html文件位于同一example.txt文件</p>
+<h3 id="getHTTPObject-js"><a href="#getHTTPObject-js" class="headerlink" title="getHTTPObject.js"></a>getHTTPObject.js</h3><pre><code>function getHTTPObject() {
+    if (typeof XMLHttpRequest == &quot;underfined&quot;)
+    XMLHTTPRequest = function() {
+        try { return new ActiveXObject(&quot;Msxml2.XMLHTTP.6.0&quot;);}
+        catch(e) {}
+        try { return new ActiveXObject(&quot;Msxml2.XMLHTTP.3.0&quot;);}
+        catch(e) {}
+        try { return new ActiveXObject(&quot;Msxml2.XMLHTTP.3.0&quot;);}
+        catch(e) {}
+        return false;
+    }
+    return new XMLHttpRequest();
+}
+</code></pre><p>   getHTTPObject 通过对象检测技术检测了 XMLHttpRequest。如果失败，则继续检测其他方法，最终返回false或一个心得XMLHttpRequest对象。</p>
+<h3 id="getNewContent-js"><a href="#getNewContent-js" class="headerlink" title="getNewContent.js"></a>getNewContent.js</h3><p>   **function getNewContent(){<br>        var request = getHTTPObject();<br>        if (request) {<br>            request.open( “GET”, “example.txt”,true );<br>            request.onreadystatechange = function() {<br>                if (request.readyState == 4) {<br>                    var para = document.createElement(“p”);<br>                    var txt = document.createTextNode(“request.responseText”);<br>                    para.appendChild(txt);<br>                    document.getElementById(‘new’).appendChild(para);<br>                }<br>            };<br>            request.send(null);<br>        } else {<br>            alert(‘Sorry,your browser doesn’t support XMLHttpRequest’);<br>        }<br>    }<br>    addLoadEvent(getNewContent);<br>  当页面加载完成后，以上代码会发送一个Get请求，请求与ajax.html文件位于同一example.txt文件</p>
 
           
         
