@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="Rabbit">
 <meta property="og:description" content="转换方法1、toLocaleString()2、toString()3、valueOf() toString()eg：var colors = [&amp;quot;red&amp;quot;,&amp;quot;blue&amp;quot;,&amp;quot;green&amp;quot;]     alert(colors.toString());  //red,blue,green     alert(colors.valueOf())">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-15T13:44:26.443Z">
+<meta property="og:updated_time" content="2018-04-15T13:45:42.248Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Array">
 <meta name="twitter:description" content="转换方法1、toLocaleString()2、toString()3、valueOf() toString()eg：var colors = [&amp;quot;red&amp;quot;,&amp;quot;blue&amp;quot;,&amp;quot;green&amp;quot;]     alert(colors.toString());  //red,blue,green     alert(colors.valueOf())">
@@ -350,8 +350,7 @@ toString : function() {
  alert(people);        //Nicholas,Gred
  alert(people.toString());     //Nicholas,Gred
  alert(people.toLocaleString());   //Nikolaos,Grigorios
-</code></pre><p>   #栈方法</p>
-<p>  1、push()<br>  2、pop()</p>
+</code></pre><h1 id="栈方法"><a href="#栈方法" class="headerlink" title="栈方法"></a>栈方法</h1><p>  1、push()<br>  2、pop()</p>
 <p>  push()方法可以接收任意数量的参数，把它们逐个添加到数组末尾，并返回修改后数组的长度。而pop()方法则从数组末尾移除最后一项，减少length值，然后返回移除的项。<br>    eg：var colors = new Array();     //创建一个数组<br>        var count = colors.push(“red”,”green”);   //推入两项<br>        alert(count);  //2</p>
 <pre><code>count = colors.push(&quot;black&quot;);    //推入另一项
 alert(&quot;conut&quot;);   //3
@@ -359,7 +358,7 @@ alert(&quot;conut&quot;);   //3
 var item = colors.pop();  //取得最后一项
 alert(item);      //&quot;black&quot;
 alert(colors.length);  //12
-</code></pre><p>  #队列方法<br>  <strong>栈数据结构的访问规则是LIFO（后进后出），而队列数据结构的访问规则是FIFO（先进先出）。队列在列表的末端添加项，从列表的前端移除项。</strong></p>
+</code></pre><h1 id="队列方法"><a href="#队列方法" class="headerlink" title="队列方法"></a>队列方法</h1><p>  <strong>栈数据结构的访问规则是LIFO（后进后出），而队列数据结构的访问规则是FIFO（先进先出）。队列在列表的末端添加项，从列表的前端移除项。</strong></p>
 <p>  1、shift()<br>  2、push()<br>  3、unshift()</p>
 <p>  push()方法是向数组末端添加项的方法，而shift()方法能够移除数组中的第一个项并返回该项，同时将数组长度减一。相反的，unshift()则是在数组前端添加任意个项并返回数值的长度。<br>    eg：var colors = new Array();     //创建一个数组<br>        var count = colors.push(“red”,green);  //推入两项<br>        alert(count); //2</p>
 <pre><code>count = colors.push(&quot;black&quot;);
@@ -371,7 +370,7 @@ alert(count); //2
 var item = colors.shift();    //取得第一项
 alert(item);   //&quot;red&quot;
 alert(colors.length);  //2
-</code></pre>
+</code></pre><h1 id="重排序方法"><a href="#重排序方法" class="headerlink" title="重排序方法"></a>重排序方法</h1>
       
     </div>
     
@@ -524,7 +523,7 @@ alert(colors.length);  //2
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#转换方法"><span class="nav-number">1.</span> <span class="nav-text">转换方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#toString-NaN"><span class="nav-number">1.1.</span> <span class="nav-text">toString()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toLocaleString-NaN"><span class="nav-number">1.2.</span> <span class="nav-text">toLocaleString()</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#转换方法"><span class="nav-number">1.</span> <span class="nav-text">转换方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#toString-NaN"><span class="nav-number">1.1.</span> <span class="nav-text">toString()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toLocaleString-NaN"><span class="nav-number">1.2.</span> <span class="nav-text">toLocaleString()</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#栈方法"><span class="nav-number">2.</span> <span class="nav-text">栈方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#队列方法"><span class="nav-number">3.</span> <span class="nav-text">队列方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#重排序方法"><span class="nav-number">4.</span> <span class="nav-text">重排序方法</span></a></li></ol></div>
             
 
           </div>
