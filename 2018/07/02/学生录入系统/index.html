@@ -73,6 +73,8 @@
 
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="Rabbit" type="application/atom+xml" />
 
@@ -81,17 +83,17 @@
 
 
 
-<meta name="description" content="Ajax   Ajax:异步加载页面   Ajax的主要优势就是对页面的请求以异步方式发送到服务器，利用Ajax，Web应用可以呈现出功能丰富、交互敏捷、类似桌面应用般的体验，就像你使用谷歌地图时一样的感觉。   Ajax的核心就是XMLHttpRequest对象。这个对象充当着浏览器中的脚本与服务器之间的中间人的角色。   重要的脚本addLoadEvent.js &amp;amp;&amp;amp; getH">
+<meta name="description" content="学生信息录用系统&amp;lt;!DOCTYPE html&amp;gt;   My first Vue app      #app {    margin: 50px auto;    width: 600px;  }  fieldset {    border: 1px solid orangered;    margin-bottom: 20px;  }  fieldset input {    width">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ajax">
-<meta property="og:url" content="http://yoursite.com/2018/03/21/Ajax/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/07/02/学生录入系统/index.html">
 <meta property="og:site_name" content="Rabbit">
-<meta property="og:description" content="Ajax   Ajax:异步加载页面   Ajax的主要优势就是对页面的请求以异步方式发送到服务器，利用Ajax，Web应用可以呈现出功能丰富、交互敏捷、类似桌面应用般的体验，就像你使用谷歌地图时一样的感觉。   Ajax的核心就是XMLHttpRequest对象。这个对象充当着浏览器中的脚本与服务器之间的中间人的角色。   重要的脚本addLoadEvent.js &amp;amp;&amp;amp; getH">
+<meta property="og:description" content="学生信息录用系统&amp;lt;!DOCTYPE html&amp;gt;   My first Vue app      #app {    margin: 50px auto;    width: 600px;  }  fieldset {    border: 1px solid orangered;    margin-bottom: 20px;  }  fieldset input {    width">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-21T13:40:24.100Z">
+<meta property="og:updated_time" content="2018-07-10T08:47:01.818Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ajax">
-<meta name="twitter:description" content="Ajax   Ajax:异步加载页面   Ajax的主要优势就是对页面的请求以异步方式发送到服务器，利用Ajax，Web应用可以呈现出功能丰富、交互敏捷、类似桌面应用般的体验，就像你使用谷歌地图时一样的感觉。   Ajax的核心就是XMLHttpRequest对象。这个对象充当着浏览器中的脚本与服务器之间的中间人的角色。   重要的脚本addLoadEvent.js &amp;amp;&amp;amp; getH">
+<meta name="twitter:description" content="学生信息录用系统&amp;lt;!DOCTYPE html&amp;gt;   My first Vue app      #app {    margin: 50px auto;    width: 600px;  }  fieldset {    border: 1px solid orangered;    margin-bottom: 20px;  }  fieldset input {    width">
 
 
 
@@ -121,7 +123,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/21/Ajax/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/02/学生录入系统/"/>
 
 
 
@@ -254,7 +256,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/21/Ajax/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/02/学生录入系统/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Rabbit">
@@ -283,8 +285,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-21T20:57:35+08:00">
-                2018-03-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-02T20:57:35+08:00">
+                2018-07-02
               </time>
             
 
@@ -321,42 +323,8 @@
       
 
       
-        <h2 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h2><p>   Ajax:异步加载页面<br>   Ajax的主要优势就是对页面的请求以异步方式发送到服务器，利用Ajax，Web应用可以呈现出功能丰富、交互敏捷、类似桌面应用般的体验，就像你使用谷歌地图时一样的感觉。<br>   <strong>Ajax的核心就是XMLHttpRequest对象。这个对象充当着浏览器中的脚本与服务器之间的中间人的角色。</strong><br>   重要的脚本<strong>addLoadEvent.js &amp;&amp; getHTTPObject.js &amp;&amp; getNewContent.js</strong><br>   为了模拟服务器的响应，在ajax.html旁边创建一个example.txt的文件<br>   内容：<strong>This was loaded asynchronously! </strong></p>
-<h3 id="getHTTPObject-js"><a href="#getHTTPObject-js" class="headerlink" title="getHTTPObject.js"></a>getHTTPObject.js</h3><pre><code>function getHTTPObject() {
-    if (typeof XMLHttpRequest == &quot;underfined&quot;)
-    XMLHTTPRequest = function() {
-        try { return new ActiveXObject(&quot;Msxml2.XMLHTTP.6.0&quot;);}
-        catch(e) {}
-        try { return new ActiveXObject(&quot;Msxml2.XMLHTTP.3.0&quot;);}
-        catch(e) {}
-        try { return new ActiveXObject(&quot;Msxml2.XMLHTTP.3.0&quot;);}
-        catch(e) {}
-        return false;
-    }
-    return new XMLHttpRequest();
-}
-</code></pre><p>   getHTTPObject 通过对象检测技术检测了 XMLHttpRequest。如果失败，则继续检测其他方法，最终返回false或一个心得XMLHttpRequest对象。</p>
-<h3 id="getNewContent-js"><a href="#getNewContent-js" class="headerlink" title="getNewContent.js"></a>getNewContent.js</h3><pre><code>function getNewContent(){
-    var request = getHTTPObject();
-    if (request) {
-        request.open( &quot;GET&quot;, &quot;example.txt&quot;,true );
-        request.onreadystatechange = function() {
-            if (request.readyState == 4) {
-                var para = document.createElement(&quot;p&quot;);
-                var txt = document.createTextNode(&quot;request.responseText&quot;);
-                para.appendChild(txt);
-                document.getElementById(&apos;new&apos;).appendChild(para);
-            }
-        };
-        request.send(null);
-    } else {
-        alert(&apos;Sorry,your browser doesn&apos;t support XMLHttpRequest&apos;);
-    }
-}
-addLoadEvent(getNewContent);
-</code></pre><p>  当页面加载完成后，以上代码会发送一个Get请求，请求与ajax.html文件位于同一example.txt文件</p>
-<p>   服务器在向XMLHttpRequest对象发回响应的时，该对象有许多属性可用，浏览器会在不同阶段更新readystate属性的值，它有5个可能的值：<br>     <strong>0表示未初始化<br>     1表示正在加载<br>     2表示加载完毕<br>     3表示正在交互<br>     4表示完成</strong><br>   只要readyState属性的值变成了4，就可以访问服务器发送回来的数据了。</p>
-
+        <h2 id="学生信息录用系统"><a href="#学生信息录用系统" class="headerlink" title="学生信息录用系统"></a>学生信息录用系统</h2><p>&lt;!DOCTYPE html&gt;</p>
+<html><br><head><br>  <title>My first Vue app</title><br>  <script src="https://unpkg.com/vue"></script><br>  <style type="text/css"><br>  #app {<br>    margin: 50px auto;<br>    width: 600px;<br>  }<br>  fieldset {<br>    border: 1px solid orangered;<br>    margin-bottom: 20px;<br>  }<br>  fieldset input {<br>    width: 200px;<br>    height: 20px;<br>    margin: 10px 0;<br>  }<br>  table {<br>    width: 600px;<br>  height: 2px solid orangered;<br>  text-align: center;<br>  }<br>  thead {<br>    background-color: orangered;<br>  }<br>  </style><br></head><br><body><br>  <div id="app"><br>    <fieldset><br>    <legend>学生信息录用系统</legend><br>    <div><br>      <span>姓名:</span><br>      <input type="text" placeholder="请输入姓名" v-model="newStudent.name"><br>    </div><br><br>    <div><br>      <span>年龄:</span><br>      <input type="text" placeholder="请输入年龄" v-model="newStudent.age"><br>    </div><br>    <div><br>      <span>性别:</span><br>        <select v-model="newStudent.sex"><br>          <option value="男">男</option><br>          <option value="女">女</option><br>        </select><br>    </div><br>    <div><br>      <span>手机:</span><br>      <input type="text" placeholder="请输入号码" v-model="newStudent.phone"><br>    </div><br>    <button @click="createNewStudent()">创建新用户</button><br>  </fieldset><br>    <table><br>      <thead><br>        <tr><br>          <td>姓名</td><br>                    <td>性别</td><br>                    <td>年龄</td><br>                    <td>手机</td><br>                    <td>删除</td><br>        </tr><br>      </thead><br>      <tbody><br>        <tr v-for="(p,index) in persons"><br>                <td></td><br>                <td></td><br>                <td></td><br>                <td></td><br>                <td><br>                    <button @click="deleteStudentMsg(index)">删除</button><br>                </td><br>        </tr><br>      </tbody><br>    </table><br></div><br><script type="text/javascript"><br>  new Vue({<br>    el:”#app”,<br>    data:{<br>      persons:[<br>      {name:’张三’,age:18,sex:’男’,phone:’15473124380’},<br>            {name:’李四’,age:18,sex:’男’,phone:’15373124380’},<br>            {name:’王五’,age:18,sex:’男’,phone:’15273124380’},<br>            {name:’赵六’,age:18,sex:’女’,phone:’15173124380’},<br>      ],<br>      newStudent : {name:’’,age:’’,sex:’男’,phone:’’}<br>    },<br>    methods: {<br>      createNewStudent() {<br>        if(this.newStudent.name === ‘’) {<br>          alert(“姓名不能为空”);<br>          return;<br>        }<br>        if(this.newStudent.age &lt;=0) {<br>          alert(“请输入正确的年龄”);<br>          return;<br>        }<br>        if(this.newStudent.phone ===’’) {<br>          alert(“手机号码不正确”);<br>          return;<br>        }<br>        this.persons.unshift(this.newStudent);<br>        this.newStudent = {name:’’,age:’’,sex:’男’,phone:’’}<br>      },<br>        deleteStudentMsg(index) {<br>          this.persons.splice(index,1);<br>        }<br>      }<br>    });<br></script><br></body><br></html>
       
     </div>
     
@@ -380,8 +348,8 @@ addLoadEvent(getNewContent);
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/21/innerHTML/" rel="next" title="innerHTML">
-                <i class="fa fa-chevron-left"></i> innerHTML
+              <a href="/2018/04/15/Array/" rel="next" title="Array">
+                <i class="fa fa-chevron-left"></i> Array
               </a>
             
           </div>
@@ -389,10 +357,6 @@ addLoadEvent(getNewContent);
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/15/Array/" rel="prev" title="Array">
-                Array <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -513,7 +477,7 @@ addLoadEvent(getNewContent);
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ajax"><span class="nav-number">1.</span> <span class="nav-text">Ajax</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#getHTTPObject-js"><span class="nav-number">1.1.</span> <span class="nav-text">getHTTPObject.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#getNewContent-js"><span class="nav-number">1.2.</span> <span class="nav-text">getNewContent.js</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#学生信息录用系统"><span class="nav-number">1.</span> <span class="nav-text">学生信息录用系统</span></a></li></ol></div>
             
 
           </div>
